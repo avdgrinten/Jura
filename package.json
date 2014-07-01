@@ -1,0 +1,32 @@
+
+{
+	"name": "jura",
+	"version": "0.1.0",
+	
+	"author": "Alexander van der Grinten",
+	"description": "A backup utility",
+	
+	"main": "./lib/index.js",
+	"files": [
+		"bin/jura.js",
+		"lib/index.js",
+		"lib/archive.js",
+		"lib/remoteDrive.js",
+		"lib/repository.js",
+		"GoogleAppCredentials.json"
+	],
+	"dependencies": {
+		"googleapis": "~0.7",
+		"async": "~0.9",
+		"read": "~1.0.5"
+	},
+	
+	"bin": { "jura": "./bin/jura.js" },
+	"preferGlobal": true,
+	
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/avdgrinten/jura"
+	}
+}
+
