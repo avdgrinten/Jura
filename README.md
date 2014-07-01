@@ -18,6 +18,7 @@ Jura can be installed via npm: `npm install jura`.
 
 First you'll want to create a new repository and index some files
 that you want to backup:
+
 1. `jura init` Initializes the repository. All information about the repository
 will be saved in a `.jura` directory in the current working directory
 2. `jura add file.txt` Adds a file to the index
@@ -25,6 +26,7 @@ will be saved in a `.jura` directory in the current working directory
 
 After you have added some files to the index you'll want to add a
 mirror that will host your backup:
+
 1. `jura add-drive-mirror myMirror backups/someFolder` Adds a mirror.
 myMirror is an internal name, you can choose any name you like.
 backups/someFolder is the name of the folder on Google Drive that will contain your backups
@@ -34,6 +36,7 @@ backups/someFolder is the name of the folder on Google Drive that will contain y
 After setting things up you can backup your data by running `jura backup myMirror`.
 
 In case you want to restore your backup you would use:
+
 1. `jura rev-list myMirror` This lists all backups you have uploaded
 2. `jura rev-restore myMirror 2014-06-29T19:00:32.802Z` Restores the backup from the specified time stamp
 
