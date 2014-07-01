@@ -28,8 +28,8 @@ After you have added some files to the index you'll want to add a
 mirror that will host your backup:
 
 1. `jura add-drive-mirror myMirror backups/someFolder` Adds a mirror.
-myMirror is an internal name, you can choose any name you like.
-backups/someFolder is the name of the folder on Google Drive that will contain your backups
+`myMirror` is an internal name, you can choose any name you like.
+`backups/someFolder` is the name of the folder on Google Drive that will contain your backups
 2. `jura auth-mirror myMirror` Authorize Jura to access your Google Drive
 3. `jura init-mirror myMirror` Create the backup folder you specified earlier on Google Drive
 
